@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+      "target": "ES2020",
+      "jsx": "preserve",
+      "module": "commonjs",
+      "lib": [
+          "DOM",
+          "ES2020",
+          "dom.iterable"
+      ],
+      "outDir": "./dist",
+      "baseUrl": "./",
+      "paths": {
+          "@/*": [
+              "src/*"
+          ],
+          "@assets/*": [
+              "src/assets/*"
+          ]
+      },
+      "esModuleInterop": true,
+      "allowJs": true,
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "allowSyntheticDefaultImports": true,
+      "incremental": true,
+      "skipLibCheck": true,
+      "strictNullChecks": false,
+      "noImplicitAny": false,
+      "strictBindCallApply": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": false,
+      "resolveJsonModule": true,
+      "traceResolution": false,
+      "moduleResolution": "node"
+  },
+  "include": [
+      "src"
+  ],
+  "exclude": [
+      "node_modules",
+      "dist"
+  ]
+}

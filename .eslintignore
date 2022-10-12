@@ -1,0 +1,10 @@
+node_modules
+build
+lib
+esm
+prism.js
+dist
+.eslintrc.js
+webpack.config.js
+./config-overrides.js
+config-overrides.js
