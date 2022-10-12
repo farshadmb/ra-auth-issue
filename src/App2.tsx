@@ -32,9 +32,10 @@ export const App: FC<AppProps> = ({ name }) => {
       <Admin
         title={name}
         catchAll={NotFoundPage}
-        requireAuth
+        requireAuth /* This flag makes whole module protected by authroization that ok to me.*/
         authProvider={appAuthenticationProvider}
         loginPage={LoginPage}>
+        {/* But I need to bypass this custom routes.*/}
         <CustomRoutes noLayout>{AuthRoutesProvider()}</CustomRoutes>
         <CustomRoutes>
           <Route path="/settings" element={<>Settings</>} />

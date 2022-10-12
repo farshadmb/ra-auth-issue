@@ -34,6 +34,9 @@ export const App: FC<AppProps> = ({ name }) => {
         catchAll={NotFoundPage}
         authProvider={appAuthenticationProvider}
         loginPage={LoginPage}>
+        {/* when we dont use `requireAuth` here we need to ensure that every component is authenticated.
+          I don't want to use `useAuthenticated` or `<Authenticated>` for every components.
+            it is error prunes. there is a sitution where might a developer forget to use them. */}
         <CustomRoutes noLayout>{AuthRoutesProvider()}</CustomRoutes>
         <CustomRoutes>
           <Route path="/settings" element={<>Settings</>} />
